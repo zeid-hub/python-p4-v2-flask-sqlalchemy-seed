@@ -1,4 +1,4 @@
-# Flask-SQLAlchemy Seeding a Database : Code-Along
+# Seeding a Database : Code-Along
 
 ## Learning Goals
 
