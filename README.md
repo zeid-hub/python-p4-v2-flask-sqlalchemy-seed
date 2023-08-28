@@ -254,6 +254,8 @@ $ flask shell
 
 ![4 rows inserted in pet table](https://curriculum-content.s3.amazonaws.com/7159/python-p4-v2-flask-sqlalchemy/4pets.png)
 
+**NOTE**: If you have multiple tables in your database, you'll need to delete first the rows in the tables that have foreign key constraints before deleting the rows in the tables that have the primary key constraints. For example, if you have a `users` table and a `pets` table, and the `pets` table has a foreign key constraint on the `user_id` column, you'll need to delete the rows in the `pets` table before deleting the rows in the `users` table.
+
 ## Generating Randomized Data
 
 One challenge of seeding a database is thinking up lots of sample data.
